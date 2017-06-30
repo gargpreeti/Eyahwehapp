@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "271526442114",
+    "firebase_url": "https://eyahweh-15d29.firebaseio.com",
+    "project_id": "eyahweh-15d29",
+    "storage_bucket": "eyahweh-15d29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271526442114:android:a7823021f57b0667",
+        "android_client_info": {
+          "package_name": "com.zoptal.appeyahwehapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271526442114-urg800ffd6c094uon3uhmkfdc7pb4l7i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zotal102.yahwahapp",
+            "certificate_hash": "3240A853EDE470A743AD2FAA21BCA80757EE387A"
+          }
+        },
+        {
+          "client_id": "271526442114-e7cesocu3humf4a2f07dp5m88kri3e8i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu_Z37ceKHTs7qYLPURFK5l5WWxZeghYU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271526442114-e7cesocu3humf4a2f07dp5m88kri3e8i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape0"
+    >
+
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape0"
+                android:id="@+id/relativeLayout">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/srch_icon"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/search_icon"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentEnd="true"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textSize="14dp"
+                    android:layout_marginRight="32dp"
+                    android:hint="Search"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:cursorVisible="true"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@drawable/blackcursor"
+                    android:textColor="#808080"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/srch_txt" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/srch_txt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#808080"></LinearLayout>
+            </RelativeLayout>
+
+
+    <com.example.common.InteractiveScrollView
+        android:id="@+id/scrollViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="3dp"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout1"
+                android:layout_below="@+id/relativeLayout"
+                >
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/nation"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape01"
+                    android:layout_centerHorizontal="true" />
+
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+
+                    android:id="@+id/area"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape01"
+
+                    android:layout_marginRight="15dp"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_toRightOf="@+id/button2"
+                    />
+            </LinearLayout>
+
+
+            <com.example.com.example.zoptal102.NonScrollListView
+                android:id="@+id/gridView1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:numColumns="1"
+                android:dividerHeight="4dp"
+                android:layout_below="@+id/linearLayout1"
+                android:isScrollContainer="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+
+</com.example.common.InteractiveScrollView>
+</RelativeLayout>
+
+
+

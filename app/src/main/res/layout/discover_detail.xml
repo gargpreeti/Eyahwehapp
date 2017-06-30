@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:id="@+id/activity_main_content_fragment1"
+    android:orientation="vertical">
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape"
+        android:id="@+id/header_layout">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:background="@drawable/logo11"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:id="@+id/logo"
+            android:layout_marginLeft="10dp"
+           android:layout_toRightOf="@+id/back"/>
+
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/back"
+            android:layout_alignParentStart="true"/>
+
+
+       <ImageView
+           android:layout_width="35dp"
+           android:layout_height="30dp"
+           android:background="@drawable/cart"
+           android:id="@+id/cart"
+           android:layout_marginRight="17dp"
+           android:layout_gravity="center"
+           android:layout_centerVertical="true"
+           android:layout_alignParentEnd="true" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:text=""
+           android:textColor="#ffffff"
+           android:id="@+id/total_cart"
+           android:layout_marginRight="4dp"
+           android:layout_gravity="center"
+           android:layout_centerVertical="true"
+           android:layout_alignParentEnd="true" />
+
+       <!--<ImageView-->
+           <!--android:layout_width="20dp"-->
+           <!--android:layout_height="20dp"-->
+           <!--android:background="@drawable/notification"-->
+           <!--android:id="@+id/noti"-->
+           <!--android:layout_marginRight="5dp"-->
+           <!--android:layout_toLeftOf="@+id/cart"-->
+           <!--android:layout_gravity="center"-->
+           <!--android:layout_centerVertical="true"-->
+           <!--/>-->
+
+
+   </RelativeLayout>
+
+<com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_layout"
+        android:fillViewport="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username_layout">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/user_img"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#3692B9"
+                    android:textSize="20dp"
+                    android:id="@+id/txt_name"
+                   android:layout_marginLeft="10dp"
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/imageButton"
+                    android:text="Follow"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="5dp"
+                    android:background="#3692B9"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true" />
+
+                <Button
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/imageButton1"
+                    android:text="Unfollow"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="5dp"
+                    android:background="#3692B9"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:visibility="invisible"
+                    android:layout_alignParentEnd="true" />
+
+
+
+                <Button
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/msg"
+                    android:text="Message"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="5dp"
+                    android:background="#000000"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+
+                    android:layout_below="@+id/imageButton"
+                    android:layout_alignParentEnd="true" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/username_layout"
+                android:id="@+id/bar_layout">
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/bar"
+                    android:elevation="6dp"
+
+                    android:minHeight="?attr/actionBarSize"
+                    />
+
+
+
+                <com.example.pager.NonSwipePager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_below="@id/tab_layout"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text=""
+                    android:id="@+id/textView4"
+                    android:layout_below="@+id/pager"
+                    android:layout_marginBottom="100dp"
+                    android:layout_gravity="center_horizontal" />
+
+            </RelativeLayout>
+          </LinearLayout>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+
+</LinearLayout>
+<!--<android.support.design.widget.CoordinatorLayout
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+
+        >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:minHeight="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username_layout">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/user_img"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#3692B9"
+                android:textSize="20dp"
+                android:id="@+id/txt_name"
+                android:layout_toLeftOf="@+id/user_img"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageButton"
+                android:text="Follow"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp"
+                android:background="#3692B9"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageButton1"
+                android:text="Unfollow"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp"
+                android:background="#3692B9"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:layout_alignParentEnd="true" />
+
+
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:id="@+id/msg"
+                android:text="Message"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp"
+                android:background="#000000"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+
+                android:layout_below="@+id/imageButton"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/tab_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp">
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/bar"
+                android:layout_gravity="bottom"
+                app:tabContentStart="70dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@android:color/white"
+
+                />
+
+
+
+        </FrameLayout>
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+        android:fillViewport="true"
+        android:layout_marginTop="140dp"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/username_layout"
+            android:id="@+id/bar_layout">
+
+
+
+            <com.example.pager.NonSwipePager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/textView4"
+                android:layout_below="@+id/pager"
+                android:layout_marginBottom="100dp"
+                android:layout_gravity="center_horizontal" />
+
+        </RelativeLayout>
+
+</com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+</LinearLayout> -->

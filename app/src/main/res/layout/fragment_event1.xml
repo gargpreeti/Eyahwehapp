@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="3dp"
+        android:fillViewport="true"
+        >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <com.example.com.example.zoptal102.NonScrollListView
+            android:id="@+id/gridView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:numColumns="1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Events added yet."
+            android:gravity="center"
+            android:id="@+id/tv_msg"
+            android:textColor="#808080"
+            android:textSize="16dp"
+            android:visibility="invisible"
+            android:layout_marginTop="120dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+  <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/add"
+
+        android:layout_marginRight="20dp"
+        android:background="@drawable/add"
+        android:layout_gravity="right"
+        android:padding="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="35dp" />
+
+
+</RelativeLayout>

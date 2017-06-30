@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/line1"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/line11"
+        android:layout_gravity="center_horizontal" />
+    <RelativeLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/orderno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OrderNo:113"
+            android:textColor="#808080"
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: 05-05-2016"
+            android:layout_alignParentRight="true"
+            android:textColor="#808080"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Detail:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shipping Detail:"
+            android:layout_alignParentRight="true"
+            android:textColor="#000000"
+            android:textStyle="bold"
+           />
+
+    </RelativeLayout>
+
+
+    <!--<ImageView-->
+        <!--android:layout_below="@+id/linear"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:id="@+id/line1"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:background="@drawable/line11"-->
+        <!--android:layout_gravity="center_horizontal" />-->
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/linear11"
+    android:layout_toRightOf="@+id/img"
+    android:layout_marginLeft="10dp"
+
+  >
+    <RelativeLayout
+        android:id="@+id/linear111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+    <TextView
+        android:id="@+id/pname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="testproduct1"
+        android:textColor="#808080"
+        android:typeface="sans"
+        android:layout_marginTop="2dp"
+        android:textSize="16dip"
+        />
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="address"
+            android:textColor="#808080"
+            android:typeface="sans"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:textSize="14dip"
+            />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/p_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Amount:123"
+            android:textColor="#808080"
+            android:typeface="sans"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16dip"
+            />
+        <TextView
+            android:id="@+id/pincode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pincode:-123456"
+            android:textColor="#808080"
+            android:typeface="sans"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:textSize="14dip"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/p_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Amount:123"
+            android:textColor="#808080"
+            android:typeface="sans"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16dip"
+            />
+        <TextView
+            android:id="@+id/landmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="landmark:"
+            android:textColor="#808080"
+            android:typeface="sans"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:textSize="14dip"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/p_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Type:-p"
+            android:textColor="#808080"
+            android:typeface="sans"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16dip"
+            />
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mohali:"
+            android:textColor="#808080"
+            android:typeface="sans"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:textSize="14dip"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/paymnt_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Type:-paypal"
+            android:textColor="#808080"
+            android:typeface="sans"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16dip"
+            />
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State:-"
+            android:textColor="#808080"
+            android:typeface="sans"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:textSize="14dip"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/phonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phone"
+            android:textColor="#808080"
+            android:typeface="sans"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:textSize="14dip"
+            />
+    </RelativeLayout>
+    </LinearLayout>
+
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:id="@+id/orderno"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:text="order no"-->
+            <!--android:textColor="#808080"-->
+            <!--android:typeface="sans"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:textSize="16dip"-->
+            <!--/>-->
+
+        <!--</RelativeLayout>-->
+
+
+</RelativeLayout>

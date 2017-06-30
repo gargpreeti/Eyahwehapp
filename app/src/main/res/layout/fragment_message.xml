@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:id="@+id/rel">
+
+    <RelativeLayout
+        android:id="@+id/activity_main_content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape"
+            android:id="@+id/header_layout">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:background="@drawable/logo11"
+                android:layout_gravity="left"
+                android:layout_centerVertical="true"
+                android:id="@+id/logo"
+                android:layout_toRightOf="@+id/header_layout1"
+                android:layout_marginLeft="10dp" />
+
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+               android:background="@drawable/newmsg"
+                android:layout_marginRight="5dp"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:id="@+id/msg1"
+                android:layout_centerVertical="true"
+           android:layout_toLeftOf="@+id/more"
+                android:layout_gravity="right" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:background="@drawable/more"
+                android:id="@+id/more"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+
+            <RelativeLayout
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:id="@+id/header_layout1">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/back"
+                    android:layout_alignParentStart="true"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/header_layout"
+            android:id="@+id/bar_layout">
+
+        </RelativeLayout>
+
+
+
+
+
+        <FrameLayout
+            android:id="@+id/activity_main_content_fragment11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/header_layout">
+
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="#ffffff"
+
+                android:dividerHeight="0.5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Conversation."
+                android:gravity="center"
+                android:id="@+id/tv_msg"
+                android:textColor="#808080"
+                android:textSize="16dp"
+                android:visibility="invisible"
+                android:layout_marginTop="250dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </FrameLayout>
+
+
+        <!--   <TextView
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:text="No Messages Click on the pen pad to start a conversation "
+               android:textColor="#808080"
+               android:textSize="20dp"
+               android:id="@+id/textView5"
+               android:layout_below="@+id/bar_layout"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="90dp" /> -->
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

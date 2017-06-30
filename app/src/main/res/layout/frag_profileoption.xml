@@ -1,0 +1,725 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:id="@+id/activity_main_content_fragment2"
+    >
+
+    <RelativeLayout
+        android:id="@+id/activity_main_content_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape"
+            android:id="@+id/header_layout">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:background="@drawable/logo11"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:id="@+id/logo"
+              android:layout_toRightOf="@+id/header_layout1" />
+            <RelativeLayout
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:id="@+id/header_layout1">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/back"
+                    android:layout_alignParentStart="true"/>
+
+              <!--  <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:id="@+id/text_bck"
+                    android:layout_toRightOf="@+id/back"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    /> -->
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:layout_marginRight="5dp"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:id="@+id/msg"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="right"
+                />
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_layout">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/header_layout"
+            android:id="@+id/bar_layout"
+            android:background="@drawable/search_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/account"
+                android:textSize="18dp"
+                android:id="@+id/img_account"
+               android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:layout_below="@+id/header_layout"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACCOUNT"
+                android:textSize="18dp"
+                android:id="@+id/account"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+               android:layout_below="@+id/header_layout"
+              />
+
+
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bar_layout"
+            android:id="@+id/bar_layout1"
+             android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/profile"
+                 android:id="@+id/img_profile"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/header_layout"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:textSize="18dp"
+                android:id="@+id/profile"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#808080"
+
+                />
+
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar1"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bar_layout1"
+            android:id="@+id/bar_layout2"
+
+            android:orientation="horizontal">
+
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:background="@drawable/cartp"
+               android:id="@+id/img_crtp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="20dp"
+               />
+
+
+
+
+
+
+           <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Cart"
+                android:textSize="18dp"
+                android:id="@+id/cart"
+               android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#808080"
+                />
+
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar3"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/bar_layout22"
+                android:id="@+id/bar_layout33"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/sellhistory"
+                    android:id="@+id/img_sel"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/header_layout"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Selling History"
+                    android:textSize="18dp"
+                    android:id="@+id/sel"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#808080"
+
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar32"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/bar_layout33"
+                android:id="@+id/bar_layout34"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/img_selling"
+                    android:id="@+id/img_buy"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/header_layout"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Buyer History"
+                    android:textSize="18dp"
+                    android:id="@+id/by"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#808080"
+
+                    />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar44"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bar_layout22"
+            android:id="@+id/bar_layout3"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/logout"
+                android:id="@+id/img_log"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/header_layout"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                android:textSize="18dp"
+                android:id="@+id/log"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#808080"
+
+                />
+
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar4"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bar_layout3"
+            android:id="@+id/bar_layout4"
+           android:background="@drawable/search_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/support"
+                android:id="@+id/img_support"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/header_layout"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUPPORT"
+                android:textSize="18dp"
+                android:id="@+id/support"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+
+                />
+
+        </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar5"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bar_layout4"
+            android:id="@+id/bar_layout5"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/help"
+                android:id="@+id/img_help"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                 />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help Center"
+                android:textSize="18dp"
+                android:id="@+id/help"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#808080"
+
+                />
+
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar6"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bar_layout5"
+            android:id="@+id/bar_layout6"
+
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/report"
+                android:id="@+id/img_report"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Report Problem"
+                android:textSize="18dp"
+                android:id="@+id/report"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#808080"
+
+                />
+
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar7"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bar_layout6"
+            android:id="@+id/bar_layout7"
+        android:background="@drawable/search_bg"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/info"
+                android:id="@+id/img_info"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABOUT"
+                android:textSize="18dp"
+                android:id="@+id/about"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+
+                />
+
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar8"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bar_layout7"
+            android:id="@+id/bar_layout8"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/share"
+                android:id="@+id/img_share"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share App"
+                android:textSize="18dp"
+                android:id="@+id/share"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#808080"
+
+                />
+
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar9"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bar_layout8"
+            android:id="@+id/bar_layout9"
+
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/blog"
+                android:id="@+id/img_blog"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blog"
+                android:textSize="18dp"
+                android:id="@+id/blog"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#808080"
+
+                />
+
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar11"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bar_layout9"
+            android:id="@+id/bar_layout10"
+
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/privacy"
+                android:id="@+id/img_privacy"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:textSize="18dp"
+                android:id="@+id/privacy"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#808080"
+
+                />
+
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar12"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bar_layout10"
+            android:id="@+id/bar_layout11"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/termservices"
+                android:id="@+id/img_service"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service"
+                android:textSize="18dp"
+                android:id="@+id/terms"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#808080"
+                />
+
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar13"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_below="@+id/bar_layout10"-->
+                <!--android:id="@+id/bar_layout14"-->
+                <!--android:orientation="horizontal">-->
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:background="@drawable/adeve"-->
+                    <!--android:id="@+id/img_aboutdeve"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--/>-->
+
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="About Developer"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:id="@+id/abdeve"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:textColor="#808080"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/seekBar14"
+                android:background="@drawable/line11"
+                android:layout_gravity="center_horizontal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/bar_layout14"
+                android:id="@+id/bar_layout12"
+                android:background="#f2f2f2"
+                android:orientation="horizontal">
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developed By:-"
+                android:textSize="12dp"
+                android:id="@+id/abdeve"
+                android:layout_gravity="center"
+                android:layout_marginLeft="75dp"
+                    android:textStyle="italic"
+                android:textColor="#969696"
+                />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zoptal Solutions pvt.ltd."
+                    android:textSize="14dp"
+                    android:id="@+id/abdeve1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="italic"
+                    android:textColor="#3692B9"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>

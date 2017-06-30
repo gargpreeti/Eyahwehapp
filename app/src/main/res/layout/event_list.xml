@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#808080"
+        android:id="@+id/img_name" />
+
+    <ImageView android:id="@+id/img"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="10dp"
+
+
+        >
+    </ImageView>
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="27dp"
+        android:background="#3292B9"
+
+        >
+
+        <ImageView android:id="@+id/like"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/like"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            >
+        </ImageView>
+        <TextView android:id="@+id/like_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="1dp"
+            android:text="0"
+            android:textColor="#ffffff"
+
+            android:textSize="15sp" >
+        </TextView>
+        <ImageView android:id="@+id/comment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/comment"
+
+            android:layout_marginLeft="8dp"
+            android:textColor="#ffffff"
+            >
+        </ImageView>
+        <TextView android:id="@+id/comment_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="1dp"
+            android:text="0"
+            android:textColor="#ffffff"
+
+            android:textSize="15sp" >
+        </TextView>
+
+        <ImageView  android:id="@+id/cart"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/cart"
+
+            android:layout_marginLeft="6dp"
+            android:textColor="#ffffff"
+            >
+        </ImageView>
+
+        <TextView android:id="@+id/cart_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp" >
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
+
